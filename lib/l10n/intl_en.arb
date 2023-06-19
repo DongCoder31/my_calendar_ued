@@ -1,0 +1,52 @@
+{
+
+    "name_app": "MY CALENDAR",
+    "title_introd1": "ACTUALLT YOURS",
+
+    "title_introd2_1_1": "Personalised, science-\nbacked care for",
+    "title_introd2_1_2": "PCOS&\nThyroid",
+    "descr_introd2_1": "Navigating weight gain, period issues,hair loss or fertility concerns can be overwhelmingly hard.",
+    "descr_introd2_2": "we gai it",
+    
+    "title_introd3_1":"An app that cares",
+    "descr_introd3_1": "Manage your weight with ecpert guidance",
+    "descr_introd3_2": "Train live with the best coaches& instuctors",
+    "descr_introd3_3": "Ger medical advice from India top PCOS, Thyroid & Fertility Experts",
+    "descr_introd3_4": "Track your periods & other symptoms",
+    "descr_introd3_5": "Comfortably get lab tests from your home",
+
+    "title_home": "My Days - Default User",
+
+    "hi": "Hi {name}",
+    "enter_pin": "Enter PIN",
+    "forget_tap_here": "forget? tap here",
+    "message_error_lost_connect": "Message error lost connect",
+    "message_error_process_failed": "Message error processfailed",
+    "create_account": "Create account",
+
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signIn_Btn": "Sign in",
+    "signUp_Btn": "Sign in",
+    "sign_in_with_Google": "Sign In with Google",
+    "sign_in_with_Facebook": "Sign In with Facebook",
+    "alreadyAccount": "Already have an account?",
+
+    "name": "Name",
+    "email": "Email",
+    "password": "password",
+    "confirmPassword": "Confirm Password",
+
+    "nameIsValid":"Name is valid",
+    "emailIsValid": "Email is valid",
+    "passwordIsValid": "Password is valid",
+    "confirmPasswordIsValid": "Confirm Password is valid",
+
+    "snackBarFailed": "{name} field",
+    "snackBarSuccessfully": "{name} Successfully",
+
+    "language": "Language",
+    "logout": "Logout",
+    "setting": "Setting"
+
+}
