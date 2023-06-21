@@ -32,6 +32,18 @@
     "sign_in_with_Facebook": "Sign In with Facebook",
     "alreadyAccount": "Already have an account?",
 
+    "register":"Register",
+    "register_title":"Create an",
+    "register_title2":"account",
+    "register_title3":"to access all the features",
+    "register_note":"Already have an account?",
+    "register_login":"Login",
+    "register_email":"Email",
+    "register_name":"Your Name",
+    "register_passworld":"Your Passworld",
+    "register_code_title":"We have sent an email to your email \naccount with a verification code!",
+    "register_code":"Verification Code",
+
     "name": "Name",
     "email": "Email",
     "password": "password",

@@ -17,6 +17,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ic_draw.svg
   SvgGenImage get icDraw => const SvgGenImage('assets/icons/ic_draw.svg');
 
+  /// File path: assets/icons/ic_email.svg
+  SvgGenImage get icEmail => const SvgGenImage('assets/icons/ic_email.svg');
+
   /// File path: assets/icons/ic_input.svg
   SvgGenImage get icInput => const SvgGenImage('assets/icons/ic_input.svg');
 
@@ -24,11 +27,15 @@ class $AssetsIconsGen {
   SvgGenImage get icNotification =>
       const SvgGenImage('assets/icons/ic_notification.svg');
 
+  /// File path: assets/icons/ic_return.svg
+  SvgGenImage get icReturn => const SvgGenImage('assets/icons/ic_return.svg');
+
   /// File path: assets/icons/ic_rig.svg
   SvgGenImage get icRig => const SvgGenImage('assets/icons/ic_rig.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [icDraw, icInput, icNotification, icRig];
+  List<SvgGenImage> get values =>
+      [icDraw, icEmail, icInput, icNotification, icReturn, icRig];
 }
 
 class $AssetsImagesGen {

@@ -310,6 +310,116 @@ class S {
     );
   }
 
+  /// `Register`
+  String get register {
+    return Intl.message(
+      'Register',
+      name: 'register',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create an`
+  String get register_title {
+    return Intl.message(
+      'Create an',
+      name: 'register_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `account`
+  String get register_title2 {
+    return Intl.message(
+      'account',
+      name: 'register_title2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `to access all the features`
+  String get register_title3 {
+    return Intl.message(
+      'to access all the features',
+      name: 'register_title3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account?`
+  String get register_note {
+    return Intl.message(
+      'Already have an account?',
+      name: 'register_note',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get register_login {
+    return Intl.message(
+      'Login',
+      name: 'register_login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get register_email {
+    return Intl.message(
+      'Email',
+      name: 'register_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your Name`
+  String get register_name {
+    return Intl.message(
+      'Your Name',
+      name: 'register_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your Passworld`
+  String get register_passworld {
+    return Intl.message(
+      'Your Passworld',
+      name: 'register_passworld',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We have sent an email to your email \naccount with a verification code!`
+  String get register_code_title {
+    return Intl.message(
+      'We have sent an email to your email \naccount with a verification code!',
+      name: 'register_code_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Verification Code`
+  String get register_code {
+    return Intl.message(
+      'Verification Code',
+      name: 'register_code',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Name`
   String get name {
     return Intl.message(

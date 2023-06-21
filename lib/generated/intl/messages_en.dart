@@ -67,6 +67,22 @@ class MessageLookup extends MessageLookupByLibrary {
         "password": MessageLookupByLibrary.simpleMessage("password"),
         "passwordIsValid":
             MessageLookupByLibrary.simpleMessage("Password is valid"),
+        "register": MessageLookupByLibrary.simpleMessage("Register"),
+        "register_code":
+            MessageLookupByLibrary.simpleMessage("Verification Code"),
+        "register_code_title": MessageLookupByLibrary.simpleMessage(
+            "We have sent an email to your email \naccount with a verification code!"),
+        "register_email": MessageLookupByLibrary.simpleMessage("Email"),
+        "register_login": MessageLookupByLibrary.simpleMessage("Login"),
+        "register_name": MessageLookupByLibrary.simpleMessage("Your Name"),
+        "register_note":
+            MessageLookupByLibrary.simpleMessage("Already have an account?"),
+        "register_passworld":
+            MessageLookupByLibrary.simpleMessage("Your Passworld"),
+        "register_title": MessageLookupByLibrary.simpleMessage("Create an"),
+        "register_title2": MessageLookupByLibrary.simpleMessage("account"),
+        "register_title3":
+            MessageLookupByLibrary.simpleMessage("to access all the features"),
         "setting": MessageLookupByLibrary.simpleMessage("Setting"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
         "signIn_Btn": MessageLookupByLibrary.simpleMessage("Sign in"),
