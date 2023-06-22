@@ -12,10 +12,12 @@ class ErrorPopup extends StatelessWidget {
     final value = await Connectivity().checkConnectivity();
 
     if (value == ConnectivityResult.none) {
+      // ignore: use_build_context_synchronously
       ErrorPopup.show(context, "No Internet");
       return;
     }
 
+    // ignore: use_build_context_synchronously
     ErrorPopup.show(context, "Fail Server");
   }
 

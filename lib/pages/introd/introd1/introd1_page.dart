@@ -5,11 +5,13 @@ import '../../../gen/assets.gen.dart';
 import '../../../generated/l10n.dart';
 import '../../../themes/app_color.dart';
 import '../introd2/introd2_page.dart';
+// import '../introd2/introd2_page.dart';
 
 class SplashScreen1 extends StatefulWidget {
   const SplashScreen1({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _SplashScreen1State createState() => _SplashScreen1State();
 }
 
@@ -20,13 +22,13 @@ class _SplashScreen1State extends State<SplashScreen1> {
   void initState() {
     super.initState();
     // Wait for 3 seconds and then switch to the next screen
-    // Future.delayed(const Duration(seconds: 10), () {
-    //   Navigator.pushReplacement(
-    //     context,
-    //     MaterialPageRoute(
-    //         builder: (BuildContext context) => const SplashScreen2()),
-    //   );
-    // });
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext context) => const SplashScreen2()),
+      );
+    });
   }
 
   @override
@@ -37,7 +39,8 @@ class _SplashScreen1State extends State<SplashScreen1> {
     double femme = MediaQuery.of(context).size.height / baseHieght;
 
     return Scaffold(
-      body: SizedBox(
+        body: SafeArea(
+      child: SizedBox(
         width: double.infinity,
         child: Container(
           padding:
@@ -94,6 +97,6 @@ class _SplashScreen1State extends State<SplashScreen1> {
           ),
         ),
       ),
-    );
+    ));
   }
 }

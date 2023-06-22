@@ -120,51 +120,111 @@ class S {
     );
   }
 
-  /// `Manage your weight with ecpert guidance`
-  String get descr_introd3_1 {
+  /// `Manage your weight`
+  String get descr_introd3_1_1 {
     return Intl.message(
-      'Manage your weight with ecpert guidance',
-      name: 'descr_introd3_1',
+      'Manage your weight',
+      name: 'descr_introd3_1_1',
       desc: '',
       args: [],
     );
   }
 
-  /// `Train live with the best coaches& instuctors`
-  String get descr_introd3_2 {
+  /// `with ecpert \nguidance`
+  String get descr_introd3_1_2 {
     return Intl.message(
-      'Train live with the best coaches& instuctors',
-      name: 'descr_introd3_2',
+      'with ecpert \nguidance',
+      name: 'descr_introd3_1_2',
       desc: '',
       args: [],
     );
   }
 
-  /// `Ger medical advice from India top PCOS, Thyroid & Fertility Experts`
-  String get descr_introd3_3 {
+  /// `Train live`
+  String get descr_introd3_2_1 {
     return Intl.message(
-      'Ger medical advice from India top PCOS, Thyroid & Fertility Experts',
-      name: 'descr_introd3_3',
+      'Train live',
+      name: 'descr_introd3_2_1',
       desc: '',
       args: [],
     );
   }
 
-  /// `Track your periods & other symptoms`
-  String get descr_introd3_4 {
+  /// `with the best coaches&n\nstuctors`
+  String get descr_introd3_2_2 {
     return Intl.message(
-      'Track your periods & other symptoms',
-      name: 'descr_introd3_4',
+      'with the best coaches&n\nstuctors',
+      name: 'descr_introd3_2_2',
       desc: '',
       args: [],
     );
   }
 
-  /// `Comfortably get lab tests from your home`
-  String get descr_introd3_5 {
+  /// `Ger medical advice`
+  String get descr_introd3_3_1 {
     return Intl.message(
-      'Comfortably get lab tests from your home',
-      name: 'descr_introd3_5',
+      'Ger medical advice',
+      name: 'descr_introd3_3_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` from India top PCOS, Thyroid & Fertility Experts`
+  String get descr_introd3_3_2 {
+    return Intl.message(
+      ' from India top PCOS, Thyroid & Fertility Experts',
+      name: 'descr_introd3_3_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Track your periods`
+  String get descr_introd3_4_1 {
+    return Intl.message(
+      'Track your periods',
+      name: 'descr_introd3_4_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` & other\nsymptoms`
+  String get descr_introd3_4_2 {
+    return Intl.message(
+      ' & other\nsymptoms',
+      name: 'descr_introd3_4_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Comfortably`
+  String get descr_introd3_5_1 {
+    return Intl.message(
+      'Comfortably',
+      name: 'descr_introd3_5_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `get lab tests`
+  String get descr_introd3_5_2 {
+    return Intl.message(
+      'get lab tests',
+      name: 'descr_introd3_5_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` from your \nhome`
+  String get descr_introd3_5_3 {
+    return Intl.message(
+      ' from your \nhome',
+      name: 'descr_introd3_5_3',
       desc: '',
       args: [],
     );

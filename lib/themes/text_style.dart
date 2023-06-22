@@ -1,3 +1,4 @@
+import 'package:calendar_flutter_app/themes/app_color.dart';
 import 'package:flutter/material.dart';
 
 class TxtStyle {
@@ -31,9 +32,11 @@ class TxtStyle {
     fontSize: 12,
   );
 
-  static const bodyLargeMedium = TextStyle(
-    fontWeight: FontWeight.w500,
-    fontSize: 16,
+  static const bodyIntrod3 = TextStyle(
+    fontFamily: 'IBM Plex Serif',
+    fontSize: 19,
+    fontWeight: FontWeight.w400,
+    color: DarkTheme.colorTextBlack,
   );
 
   static const bodyLargeRegular = TextStyle(

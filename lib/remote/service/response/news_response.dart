@@ -15,5 +15,6 @@ class NewAllResponse extends BaseResponse {
   factory NewAllResponse.fromJson(Map<String, dynamic> json) =>
       _$NewAllResponseFromJson(json);
 
+  @override
   Map<String, dynamic> toJson() => _$NewAllResponseToJson(this);
 }

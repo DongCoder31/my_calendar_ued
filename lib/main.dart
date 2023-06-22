@@ -1,22 +1,25 @@
 import 'package:calendar_flutter_app/main_viewmodel.dart';
+import 'package:calendar_flutter_app/pages/home/hom_page.dart';
+import 'package:calendar_flutter_app/pages/introd/introd1/introd1_page.dart';
 import 'package:calendar_flutter_app/pages/introd/introd2/introd2_page.dart';
+import 'package:calendar_flutter_app/pages/introd/introd3/introd3_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 
 import 'base/di/locator.dart';
 import 'generated/l10n.dart';
-import 'pages/introd/introd1/introd1_page.dart';
+// import 'pages/introd/introd1/introd1_page.dart';
 
 void main() {
   setUpInjector();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 const defaultPlayerCount = 4;
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +41,7 @@ class MyApp extends StatelessWidget {
             ],
             locale: const Locale('en'),
             supportedLocales: S.delegate.supportedLocales,
-            home: const SplashScreen2()));
+            home: SplashScreen1()));
     //);
   }
 }

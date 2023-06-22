@@ -39,16 +39,27 @@ class MessageLookup extends MessageLookupByLibrary {
         "descr_introd2_1": MessageLookupByLibrary.simpleMessage(
             "Navigating weight gain, period issues,hair loss or fertility concerns can be overwhelmingly hard."),
         "descr_introd2_2": MessageLookupByLibrary.simpleMessage("we gai it"),
-        "descr_introd3_1": MessageLookupByLibrary.simpleMessage(
-            "Manage your weight with ecpert guidance"),
-        "descr_introd3_2": MessageLookupByLibrary.simpleMessage(
-            "Train live with the best coaches& instuctors"),
-        "descr_introd3_3": MessageLookupByLibrary.simpleMessage(
-            "Ger medical advice from India top PCOS, Thyroid & Fertility Experts"),
-        "descr_introd3_4": MessageLookupByLibrary.simpleMessage(
-            "Track your periods & other symptoms"),
-        "descr_introd3_5": MessageLookupByLibrary.simpleMessage(
-            "Comfortably get lab tests from your home"),
+        "descr_introd3_1_1":
+            MessageLookupByLibrary.simpleMessage("Manage your weight"),
+        "descr_introd3_1_2":
+            MessageLookupByLibrary.simpleMessage("with ecpert \nguidance"),
+        "descr_introd3_2_1": MessageLookupByLibrary.simpleMessage("Train live"),
+        "descr_introd3_2_2": MessageLookupByLibrary.simpleMessage(
+            "with the best coaches&n\nstuctors"),
+        "descr_introd3_3_1":
+            MessageLookupByLibrary.simpleMessage("Ger medical advice"),
+        "descr_introd3_3_2": MessageLookupByLibrary.simpleMessage(
+            " from India top PCOS, Thyroid & Fertility Experts"),
+        "descr_introd3_4_1":
+            MessageLookupByLibrary.simpleMessage("Track your periods"),
+        "descr_introd3_4_2":
+            MessageLookupByLibrary.simpleMessage(" & other\nsymptoms"),
+        "descr_introd3_5_1":
+            MessageLookupByLibrary.simpleMessage("Comfortably"),
+        "descr_introd3_5_2":
+            MessageLookupByLibrary.simpleMessage("get lab tests"),
+        "descr_introd3_5_3":
+            MessageLookupByLibrary.simpleMessage(" from your \nhome"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "emailIsValid": MessageLookupByLibrary.simpleMessage("Email is valid"),
         "enter_pin": MessageLookupByLibrary.simpleMessage("Enter PIN"),
