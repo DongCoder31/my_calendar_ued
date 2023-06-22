@@ -35,8 +35,7 @@ class _SplashScreen1State extends State<SplashScreen2> {
     double femme = MediaQuery.of(context).size.height / baseHieght;
 
     return Scaffold(
-      body: SafeArea(
-          child: SizedBox(
+      body: SizedBox(
         width: double.infinity,
         child: Container(
           // iphone13promax2tYn (1:16)
@@ -149,7 +148,7 @@ class _SplashScreen1State extends State<SplashScreen2> {
             ],
           ),
         ),
-      )),
+      ),
     );
   }
 }

@@ -39,8 +39,7 @@ class _SplashScreen1State extends State<SplashScreen1> {
     double femme = MediaQuery.of(context).size.height / baseHieght;
 
     return Scaffold(
-        body: SafeArea(
-      child: SizedBox(
+      body: SizedBox(
         width: double.infinity,
         child: Container(
           padding:
@@ -97,6 +96,6 @@ class _SplashScreen1State extends State<SplashScreen1> {
           ),
         ),
       ),
-    ));
+    );
   }
 }
