@@ -7,8 +7,14 @@ import '../../generated/l10n.dart';
 import '../../themes/app_color.dart';
 import '../../utils/validates.dart';
 
-class RegisterPage extends StatelessWidget {
-  RegisterPage({super.key});
+class RegisterPage extends StatefulWidget {
+ const RegisterPage({super.key});
+
+  @override
+  State<RegisterPage> createState() => _RegisterPageState();
+}
+
+class _RegisterPageState extends State<RegisterPage> {
   final formkey = GlobalKey<FormState>();
 
   @override
@@ -184,7 +190,7 @@ class RegisterPage extends StatelessWidget {
                               S.of(context).register,
                               textAlign: TextAlign.center,
                               style:  TextStyle(
-                                  fontSize: 28*femme, color: Colors.white),
+                                  fontSize: 20*femme, color: Colors.white),
                             ),
                           ),
                         ),

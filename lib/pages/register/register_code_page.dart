@@ -96,7 +96,7 @@ class RegisterCodePage extends StatelessWidget {
                               S.of(context).register,
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  fontSize: 28 * femme, color: Colors.white),
+                                  fontSize: 20 * femme, color: Colors.white),
                             ),
                           ),
                         ),
