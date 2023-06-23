@@ -19,7 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_fonts: ^2.1.0
+
 
 
 
@@ -86,6 +86,7 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/fonts/
 
   fonts:
     - family: manrope
