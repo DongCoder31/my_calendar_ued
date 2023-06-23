@@ -41,4 +41,6 @@ class DarkTheme {
 
   static const gradient1 = Color(0xFF191D2B);
   static final gradient2 = const Color(0xFF191D2B).withOpacity(0);
-}
+  static final backgroundcolor = Color(0xFFF69A9A);
+
+ }

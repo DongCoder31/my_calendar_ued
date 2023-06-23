@@ -5,7 +5,6 @@ import '../../../gen/assets.gen.dart';
 import '../../../generated/l10n.dart';
 import '../../../themes/app_color.dart';
 import '../introd2/introd2_page.dart';
-
 class SplashScreen1 extends StatefulWidget {
   const SplashScreen1({Key? key}) : super(key: key);
 

@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 import 'base/di/locator.dart';
 import 'generated/l10n.dart';
 import 'pages/introd/introd1/introd1_page.dart';
+import 'pages/login/login_page.dart';
 
 void main() {
   setUpInjector();
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
             ],
             locale: const Locale('en'),
             supportedLocales: S.delegate.supportedLocales,
-            home: const SplashScreen2()));
+            home: const loginpage()));
     //);
   }
 }
