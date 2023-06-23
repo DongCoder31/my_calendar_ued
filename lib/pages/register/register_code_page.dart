@@ -1,14 +1,23 @@
-import 'package:calendar_flutter_app/pages/bg/bg.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../gen/assets.gen.dart';
 import '../../generated/l10n.dart';
 import '../../themes/app_color.dart';
-import '../../utils/validates.dart';
+import 'package:calendar_flutter_app/pages/register/bg.dart';
+import 'package:calendar_flutter_app/pages/register/validates.dart';
 
-class RegisterCodePage extends StatelessWidget {
-  RegisterCodePage({super.key});
+
+class RegisterCodePage extends StatefulWidget {
+  const RegisterCodePage({super.key});
+
+  @override
+  State<RegisterCodePage> createState() => _RegisterCodePageState();
+}
+
+class _RegisterCodePageState extends State<RegisterCodePage> {
   final formkey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 431.57;

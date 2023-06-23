@@ -1,11 +1,10 @@
-import 'package:calendar_flutter_app/pages/bg/bg.dart';
-import 'package:calendar_flutter_app/pages/register/register_code_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../gen/assets.gen.dart';
 import '../../generated/l10n.dart';
 import '../../themes/app_color.dart';
-import '../../utils/validates.dart';
+import 'package:calendar_flutter_app/pages/register/bg.dart';
+import 'package:calendar_flutter_app/pages/register/validates.dart';
 
 class RegisterPage extends StatefulWidget {
  const RegisterPage({super.key});
@@ -13,12 +12,14 @@ class RegisterPage extends StatefulWidget {
   @override
   State<RegisterPage> createState() => _RegisterPageState();
 }
+ 
 
 class _RegisterPageState extends State<RegisterPage> {
   final formkey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
+    bool formState  = false;
     double baseWidth = 431.57;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double baseHieght = 939.03;
@@ -170,9 +171,12 @@ class _RegisterPageState extends State<RegisterPage> {
                       SizedBox(height: 75 * femme),
                       Padding(
                         padding: EdgeInsets.only(right: 36 * fem),
-                        child: InkWell(
-                          onTap: () {
-                            if (formkey.currentState!.validate()) {
+                        child: TextButton(
+                          onPressed: () {
+                            if (formkey.currentState!.validate()) {   
+                              formState = true;     
+                              setState(() {
+                              });                     
                               return;
                             }
                           },
@@ -207,7 +211,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             width: 6 * fem,
                           ),
                           GestureDetector(
-                            onTap: () {   Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterCodePage()));},
+                            onTap: () {  },
                             child: Text(
                               S.of(context).register_login,
                               style: TextStyle(

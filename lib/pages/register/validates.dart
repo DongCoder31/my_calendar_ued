@@ -14,17 +14,6 @@ class AppValidator {
     return null;
   }
 
-  static String? validateID(String id) {
-    if (id.trim().isEmpty) {
-      return 'Id không được để trống';
-    }
-
-    if (id.length > 8) {
-      return 'ID không được hơn 8 kí tự';
-    }
-
-    return null;
-  }
     static String? validateCode(String code) {
     if (code.trim().isEmpty) {
       return 'Code không được để trống';
@@ -43,6 +32,10 @@ class AppValidator {
   static String? validateName(String name) {
     if (name.trim().isEmpty) {
       return 'Tên không được để trống';
+    }
+    RegExp pattern = RegExp(r'^[a-zA-Z0-9][a-zA-Z0-9\s]*[a-zA-Z0-9]$');
+    if(!pattern.hasMatch(name)){
+      return 'Tên phải đúng định dạng';
     }
 
     return null;
