@@ -23,6 +23,7 @@ dependencies:
 
 
 
+
   cupertino_icons: ^1.0.2
 
   # singleTon
@@ -78,6 +79,7 @@ dev_dependencies:
   flutter_gen_runner:
   retrofit_generator: ^7.0.1
   flutter_lints: ^2.0.0
+  email_validator: '^2.1.16'
 
 flutter:
   generate: true  

@@ -2,6 +2,7 @@ import 'package:calendar_flutter_app/constants/color.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:calendar_flutter_app/themes/app_color.dart';
+import 'package:email_validator/email_validator.dart';
 
 
 
@@ -15,10 +16,16 @@ class loginpage extends StatefulWidget {
 class _loginpageState extends State<loginpage>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-
+  TextEditingController _emailController = new TextEditingController();
+  TextEditingController _passController = new TextEditingController();
+  var _emailError = "Email không hợp lệ";
+  var _passError = "Password không để trống";
+  bool _emailInvalid = false;
+  bool _passInvalid = false;
   @override
   void initState() {
     super.initState();
+    bool _isObscured = true;
     _controller = AnimationController(vsync: this);
   }
 
@@ -43,7 +50,13 @@ class _loginpageState extends State<loginpage>
         body: Container(
           padding: EdgeInsets.fromLTRB(16.0, 49.0, 16.0, 149.0),
           constraints: BoxConstraints.expand(),
-          color: DarkTheme.backgroundcolor,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/backgroud.png'),
+              fit: BoxFit.cover,
+            ),
+            color: DarkTheme.white,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -85,8 +98,10 @@ class _loginpageState extends State<loginpage>
 
                     ),
                     SizedBox(height: 7),
-                    TextFormField(
+                    TextField(
+                      controller: _emailController,
                       decoration: InputDecoration(
+                        errorText: _emailInvalid ? _emailError : null,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(4),
                           borderSide: BorderSide(color: Color(0xFF575DFB)),
@@ -116,8 +131,11 @@ class _loginpageState extends State<loginpage>
                       ),
 
                     SizedBox(height: 7),
-                    TextFormField(
+                    TextField(
+                      obscureText: false,
+                      controller: _passController,
                       decoration: InputDecoration(
+                        errorText: _passInvalid ? _passError : null,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(4),
                           borderSide: BorderSide(color: Color(0xFF575DFB)),
@@ -155,7 +173,7 @@ class _loginpageState extends State<loginpage>
                 margin: EdgeInsets.only(top: 10, left: 10),
                 child: ElevatedButton(
                   onPressed: () {
-                    // Xử lý khi nút "Login" được nhấn
+                    onLoginClicked();
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.blue,
@@ -164,7 +182,6 @@ class _loginpageState extends State<loginpage>
                     ),
                   ),
                   child: Text(
-
                     'Login',
                     style: TextStyle(
                       color: Colors.white,
@@ -191,7 +208,7 @@ class _loginpageState extends State<loginpage>
               ),
               SizedBox(height: 10),
         Container(
-          width: 343,
+          width: 434,
           height: 56,
           margin: EdgeInsets.only(top: 10, left: 10),
           child: ElevatedButton.icon(
@@ -224,40 +241,48 @@ class _loginpageState extends State<loginpage>
             ),
           ),
         ),
-          SizedBox(height: 30),
-        Container(
-          margin: EdgeInsets.only(left: 60),
-          width: 273,
-          height: 19,
-          child: RichText(
-            text: TextSpan(
-              text: "Don't have an account? ",
+          SizedBox(height: 20),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+          Text(
+            "Don't have an account? ",
               style: TextStyle(
-                fontFamily: "Inter",
                 fontSize: 16,
                 color: Colors.black,
               ),
-              children: [
-                TextSpan(
-                  text: "Register",
-                  style: TextStyle(
-                    color: Colors.black,
-                    decoration: TextDecoration.underline,
-                  ),
-                  recognizer: TapGestureRecognizer()
-                    ..onTap = () {
-                      // Xử lý sự kiện khi chữ "Register" được nhấp vào
-                      // Chuyển sang màn hình đăng ký
-                    },
-                ),
+          ),
+            TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Register",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ))
               ],
             ),
-          ),
-        ),
             ],
           ),
         ),
       ),
     );
+  }
+  void onLoginClicked(){
+    setState(() {
+      if(!EmailValidator.validate(_emailController as String)){
+        _emailInvalid = false;
+      }
+      else{
+        _emailInvalid = true;
+      };
+      if(_passController.text.length < 6 ){
+        _passInvalid = false;
+      }
+      else{
+        _passInvalid = true;
+      };
+    });
   }
 }
