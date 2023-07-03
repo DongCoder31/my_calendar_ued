@@ -1,5 +1,6 @@
 import 'package:calendar_flutter_app/main_viewmodel.dart';
 import 'package:calendar_flutter_app/pages/register/register_page.dart';
+import 'package:calendar_flutter_app/pages/register/verifycodepage/register_verifycode.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
             ],
             locale: const Locale('en'),
             supportedLocales: S.delegate.supportedLocales,
-            home:  RegisterPage()));
+            home: const RegisterVerifyCode()));
     //);
   }
 }
