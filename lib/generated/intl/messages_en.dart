@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alreadyAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
+        "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
         "confirmPasswordIsValid":
@@ -54,6 +55,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "enter_pin": MessageLookupByLibrary.simpleMessage("Enter PIN"),
         "forget_tap_here":
             MessageLookupByLibrary.simpleMessage("forget? tap here"),
+        "forgotPassword":
+            MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+        "forgotPassword_passwordNew":
+            MessageLookupByLibrary.simpleMessage("Enter New Password"),
+        "forgotPassword_title_code": MessageLookupByLibrary.simpleMessage(
+            "We have sent an email to your email \naccount with a verification code!"),
+        "forgotPassword_title_email": MessageLookupByLibrary.simpleMessage(
+            "Recover you password if you have \nforgot the password!"),
+        "forgotPassword_title_password": MessageLookupByLibrary.simpleMessage(
+            "Set your new password to login into \nyour account!"),
         "hi": m0,
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
@@ -94,6 +105,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Sign In with Google"),
         "snackBarFailed": m1,
         "snackBarSuccessfully": m2,
+        "submit": MessageLookupByLibrary.simpleMessage("Submit"),
         "title_home":
             MessageLookupByLibrary.simpleMessage("My Days - Default User"),
         "title_introd1": MessageLookupByLibrary.simpleMessage("ACTUALLT YOURS"),

@@ -174,8 +174,8 @@ class _RegisterPageState extends State<RegisterPage>
                           ]),
                         ),
                         Container(
-                          margin: EdgeInsets.only(top: 59 * femme),
-                          padding: EdgeInsets.only(right: 36 * fem),
+                          margin:
+                              EdgeInsets.only(top: 59 * femme, right: 36 * fem),
                           child: ButtonItems(
                             buttonText: S.of(context).register,
                             onPressed: () {

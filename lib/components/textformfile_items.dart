@@ -9,12 +9,14 @@ class TextFormFieldItems extends StatelessWidget {
       this.keyBoardType,
       this.validate,
       this.prefixIcon,
-      this.hintText});
+      this.hintText,
+      this.textAlain});
   final TextEditingController? textEditingController;
   final TextInputType? keyBoardType;
   final String? Function(String?)? validate;
   final Widget? prefixIcon;
   final String? hintText;
+  final TextAlign? textAlain;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +27,7 @@ class TextFormFieldItems extends StatelessWidget {
       autovalidateMode: AutovalidateMode.onUserInteraction,
       controller: textEditingController,
       validator: validate,
+      textAlign: textAlain ?? TextAlign.start,
       decoration: InputDecoration(
           contentPadding:
               EdgeInsets.fromLTRB(22 * fem, 18 * femme, 22 * fem, 18 * femme),

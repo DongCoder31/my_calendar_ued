@@ -1,4 +1,4 @@
-import 'package:calendar_flutter_app/pages/register/verifycodepage/register_verifycode_viewmodel.dart';
+import 'package:calendar_flutter_app/pages/register/bg.dart';
 import 'package:flutter/material.dart';
 
 import '../../../base/base_page.dart';
@@ -7,20 +7,20 @@ import '../../../components/textformfile_items.dart';
 import '../../../constants/constants.dart';
 import '../../../gen/assets.gen.dart';
 import '../../../generated/l10n.dart';
-import '../bg.dart';
-import '../validates.dart';
+import '../register/validates.dart';
+import 'forgotpasswordVM/forgotpassword_email_viewmodel.dart';
 
-class RegisterVerifyCode extends StatefulWidget {
-  const RegisterVerifyCode({super.key});
+class ForgotPasswordEmail extends StatefulWidget {
+  const ForgotPasswordEmail({super.key});
 
   @override
-  State<RegisterVerifyCode> createState() => _RegisterVerifyCodeState();
+  State<ForgotPasswordEmail> createState() => _ForgotPasswordEmailState();
 }
 
-class _RegisterVerifyCodeState extends State<RegisterVerifyCode>
-    with MixinBasePage<RegisterVerifycodeVM> {
+class _ForgotPasswordEmailState extends State<ForgotPasswordEmail>
+    with MixinBasePage<ForgotPasswordEmailVM> {
   final formkey = GlobalKey<FormState>();
-  final TextEditingController textCodeRegisterController =
+  final TextEditingController textEmailRegisterController =
       TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -42,22 +42,20 @@ class _RegisterVerifyCodeState extends State<RegisterVerifyCode>
                       child: Assets.icons.icReturn.svg(width: 23 * fem),
                     ),
                     Container(
-                        margin: EdgeInsets.only(top: 21 * femme),
+                        margin:
+                            EdgeInsets.only(top: 36 * femme, right: 93 * fem),
                         child: RichText(
                             text: TextSpan(children: [
                           TextSpan(
-                              text: '${S.of(context).register}\n',
+                              text: '${S.of(context).forgotPassword}\n',
                               style: TextStyle(
                                   color: const Color(0xFF575DFB),
                                   fontSize: 32 * femme / fem,
                                   fontFamily: 'Inter',
                                   fontWeight: FontWeight.w700,
                                   letterSpacing: -0.352 * fem)),
-                          WidgetSpan(
-                            child: SizedBox(height: 19 * femme),
-                          ),
                           TextSpan(
-                            text: S.of(context).register_code_title,
+                            text: S.of(context).forgotPassword_title_email,
                             style: TextStyle(
                                 color: const Color(0xFF000000),
                                 fontSize: 16 * femme / fem,
@@ -67,10 +65,10 @@ class _RegisterVerifyCodeState extends State<RegisterVerifyCode>
                           ),
                         ]))),
                     Container(
-                      margin: EdgeInsets.only(top: 40 * femme, right: 36 * fem),
+                      margin: EdgeInsets.only(top: 55 * femme, right: 36 * fem),
                       child: Wrap(spacing: 6 * femme, children: [
                         Text(
-                          S.of(context).register_code,
+                          S.of(context).email,
                           style: TextStyle(
                               color: const Color(0xFF000000),
                               fontSize: 16 * femme / fem,
@@ -79,20 +77,23 @@ class _RegisterVerifyCodeState extends State<RegisterVerifyCode>
                               letterSpacing: -0.176 * fem),
                         ),
                         TextFormFieldItems(
-                          keyBoardType: TextInputType.number,
-                          textEditingController: textCodeRegisterController,
+                          keyBoardType: TextInputType.emailAddress,
+                          textEditingController: textEmailRegisterController,
                           validate: (value) {
-                            return AppValidator.validateCode(value!);
+                            return AppValidator.validateEmail(value!);
                           },
-                          hintText: 'EX: 123456',
-                          textAlain: TextAlign.center,
+                          prefixIcon: const Icon(
+                            Icons.email_outlined,
+                            color: Color(0xFF575DFB),
+                          ),
+                          hintText: 'Ex: abc@example.com',
                         )
                       ]),
                     ),
                     Container(
                       margin: EdgeInsets.only(top: 28 * femme, right: 36 * fem),
                       child: ButtonItems(
-                        buttonText: S.of(context).register,
+                        buttonText: S.of(context).submit,
                         onPressed: () {
                           if (formkey.currentState?.validate() == true) {
                             return;
@@ -107,8 +108,8 @@ class _RegisterVerifyCodeState extends State<RegisterVerifyCode>
   }
 
   @override
-  RegisterVerifycodeVM create() {
-    return RegisterVerifycodeVM();
+  ForgotPasswordEmailVM create() {
+    return ForgotPasswordEmailVM();
   }
 
   @override

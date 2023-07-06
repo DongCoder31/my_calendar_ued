@@ -1,4 +1,7 @@
 import 'package:calendar_flutter_app/main_viewmodel.dart';
+import 'package:calendar_flutter_app/pages/forgotpassword/forgotpassword_code.dart';
+import 'package:calendar_flutter_app/pages/forgotpassword/forgotpassword_email.dart';
+import 'package:calendar_flutter_app/pages/forgotpassword/forgotpassword_password.dart';
 import 'package:calendar_flutter_app/pages/register/register_page.dart';
 import 'package:calendar_flutter_app/pages/register/verifycodepage/register_verifycode.dart';
 import 'package:flutter/material.dart';

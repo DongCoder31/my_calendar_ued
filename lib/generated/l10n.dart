@@ -500,6 +500,76 @@ class S {
     );
   }
 
+  /// `Forgot Password?`
+  String get forgotPassword {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'forgotPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Recover you password if you have \nforgot the password!`
+  String get forgotPassword_title_email {
+    return Intl.message(
+      'Recover you password if you have \nforgot the password!',
+      name: 'forgotPassword_title_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We have sent an email to your email \naccount with a verification code!`
+  String get forgotPassword_title_code {
+    return Intl.message(
+      'We have sent an email to your email \naccount with a verification code!',
+      name: 'forgotPassword_title_code',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Set your new password to login into \nyour account!`
+  String get forgotPassword_title_password {
+    return Intl.message(
+      'Set your new password to login into \nyour account!',
+      name: 'forgotPassword_title_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter New Password`
+  String get forgotPassword_passwordNew {
+    return Intl.message(
+      'Enter New Password',
+      name: 'forgotPassword_passwordNew',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Submit`
+  String get submit {
+    return Intl.message(
+      'Submit',
+      name: 'submit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm`
+  String get confirm {
+    return Intl.message(
+      'Confirm',
+      name: 'confirm',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `{name} field`
   String snackBarFailed(Object name) {
     return Intl.message(
